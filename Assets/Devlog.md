@@ -30,3 +30,6 @@
     
     - [x] Gestion du dash
     - [ ] Gestion du tir
+
+### Jour 3
+
