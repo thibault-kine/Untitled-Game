@@ -8,13 +8,9 @@ public class PlayerMovement : MonoBehaviour
 {
     private CharacterController controller;
     
-    // === ABILITIES === //
-    // These will be set to false if the player is at the start of story mode
     private bool canRun = true;
     private bool canJump = true;
     private bool canCrouch = true;
-    private bool canDash = true;
-    private bool canShoot = true;
     
     // déplacement
     private float speed;
@@ -41,8 +37,8 @@ public class PlayerMovement : MonoBehaviour
     private float ceilDistance = 0.4f;
     private bool isCrouched;
     private Transform ceilCheck;
-    
-    
+
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -50,8 +46,10 @@ public class PlayerMovement : MonoBehaviour
         ceilCheck = transform.Find("Ceil Check");
         groundMask = LayerMask.GetMask("Ground");
 
-        if (!canRun) speed = 3f;
-        else speed = 10f;
+        if (!canRun) 
+            speed = 3f;
+        else 
+            speed = 10f;
     }
     
 
@@ -120,17 +118,5 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
-    }
-    
-    
-    // === GETTERS ===
-    public float GetSpeed()
-    {
-        return speed;
-    }
-    
-    public float GetJumpHeight()
-    {
-        return jumpHeight;
     }
 }

@@ -16,6 +16,17 @@
 - [x] Gestion de l'UI
 
     - [x] Affichage du canvas
-    - [x] Il faut que je mette le jeu en pause lorsque le joueur appuie sur "echap" 
-    - [ ] ~~Je dois afficher les valeurs des variables~~
+    - [x] Il faut que je mette le jeu en pause lorsque le joueur appuie sur "echap"
     - [x] Je dois réinitialiser les sliders quand on clique sur "Default"
+  
+### Jour 2
+
+- [x] Gestion du HUD
+   
+    - [x] Affichage du HUD
+    - [x] Gestion du cooldown
+
+- [ ] Gestions des abilités
+    
+    - [x] Gestion du dash
+    - [ ] Gestion du tir
